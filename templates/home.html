@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4 text-center">Student & Fees Management Portal</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">➕ Add Student</h5>
+            <p class="card-text">Add a new student with their details.</p>
+            <a href="/add_student" class="btn btn-primary">Go</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">📋 View Students</h5>
+            <p class="card-text">Edit or delete existing student records.</p>
+            <a href="/view_students" class="btn btn-success">Go</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">💰 Fees Management</h5>
+            <p class="card-text">Manage student installment payments.</p>
+            <a href="/fees_management" class="btn btn-warning">Go</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">📊 Dashboard</h5>
+            <p class="card-text">View overall stats and monthly analytics.</p>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-info">Go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
